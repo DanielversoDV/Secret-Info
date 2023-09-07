@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECRET INFO (HEHE)</title>
+    <style>
+        body {
+            color: white;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            transition: background-color 1s, color 1s;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HELLO, WELCOME TO THE RAINBOW TROLL SITE.</h1>
+    </header>
+
+    <main>
+        <p>YOU COME HERE FOR NOTHING.</p>
+        <img src="https://e7.pngegg.com/pngimages/551/178/png-clipart-troll-face-left-troll-face-people-troll-face-thumbnail.png" alt="Website Image">
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Daniel's Troll Site. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function rainbowColors() {
+            const colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#9400D3'];
+            let currentColorIndex = 0;
+            
+            setInterval(() => {
+                document.body.style.backgroundColor = colors[currentColorIndex];
+                document.body.style.color = colors[(currentColorIndex + 4) % colors.length]; // Offset text color for visibility
+                
+                currentColorIndex = (currentColorIndex + 1) % colors.length;
+            }, 1000); // Change color every 1 second
+        }
+
+        rainbowColors(); // Start the rainbow effect
+    </script>
+</body>
+</html>
